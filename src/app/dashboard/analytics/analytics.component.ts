@@ -12,10 +12,10 @@ import { NgApexchartsModule } from 'ng-apexcharts';
 export class AnalyticsComponent {
   public series: any[] = [{
     name: 'Requests',
-    data: [44, 55, 57, 56, 61, 58, 63, 60, 66, 68, 78, 23]
+    data: [30, 60, 57, 52, 61, 55, 60, 60, 66, 62, 84, 23]
     }, {
     name: 'Attendance',
-    data: [76, 85, 101, 98, 87, 105, 91, 114, 94, 100, 92, 88]
+    data: [80, 101, 105, 98, 87, 67, 91, 60, 94, 54, 92, 55]
     }, ];
    
     public chart: any = {
