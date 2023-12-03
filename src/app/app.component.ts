@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, OnChanges, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -12,29 +12,27 @@ import { SideNavComponent } from './app-core/common/side-nav/side-nav.component'
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnChanges, OnInit  {
-
-  title = 'inmest-web';
-  name = "Lucky";
+export class AppComponent implements OnChanges {
+  title = 'inMest-web';
+  name = 'Shad';
   profile = {
     id: 1,
-    first_name: "Lucky",
-    last_name: "Dogbey"
+    firstName: "Shadrack",
+    lastName: "Apollo",
+    middleName: "Amekileng",
   }
-  genesis = "hello";
 
-  ngOnInit(): void {
-    console.log('On Init');
-  }
-  constructor() {
-    console.log("constructor");
+  constructor(){
+    console.log("construct this");
   }
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(changes, 'changes');
-    for(const inputChange in changes) {
+    console.log(this.name, 'onChanges');
+    for (const inputChange in changes){
       console.log(changes[inputChange].firstChange, inputChange);
-    }
+    } 
   }
 
-  
+  ngOnInit(): void{
+    console.log('On Init');
+  }
 }

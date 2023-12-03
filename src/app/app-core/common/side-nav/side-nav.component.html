@@ -1,38 +1,44 @@
-<div class="side-nav">
-    <img class="logo" src="images/logo.jpeg" alt="">
+<div class="sideNav">
+    <img class="logo" src="/assets/images/logo.png">
+   
     <ul class="menu">
+        <a [routerLink]="['/']" [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact:true}">
         <li >
-            <a  [routerLink]="['/']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}">
-                <i class="fa fa-dashboard"></i>
-                Dashboard
-            </a>
-        </li>
-        <li>
-        
-            <a [routerLink]="['/attendance']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}">
-                <i class="fa fa-calendar"></i>
-                Attendance
-            </a>
-        </li>
-        <li>
-            <a [routerLink]="['/leaves']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}">
-                <i class="fa fa-bed"></i>
-                Leave
-            </a>
-        </li>
+          
+            <i class="fa fa-tachometer"></i>
+            Dashboard
+     
+            </li>
+        </a>
+
+        <a [routerLink]="['/attendance']"  [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact:true}" >
         <li>
            
+            <i class="fa fa-calendar"></i>Attendance
             
-            <a [routerLink]="['/analytics']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}">
-                <i class="fa fa-area-chart"></i>
-                Analytics
-            </a>
+          
         </li>
+    </a>
+
+    <a [routerLink]="['/leave']" [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact:true}">
         <li>
-            <a [routerLink]="['/users']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}">
-                <i class="fa fa-users"></i>
-                Users
-            </a>
+            <i class="fa fa-calendar-o"></i>
+            Requests
+           
         </li>
+    </a>
+    
+    <a [routerLink]="['/analytics']" [routerLinkActive]="'menuActive'" [routerLinkActiveOptions]="{exact:true}" >
+        <li>
+            
+            <i class="fa fa-pie-chart"></i>Analytics
+           
+        </li>
+    </a>
+
+    
+
+    
+      
     </ul>
 </div>

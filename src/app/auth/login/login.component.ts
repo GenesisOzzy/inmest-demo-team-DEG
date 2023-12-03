@@ -9,16 +9,15 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
+
 export class LoginComponent implements OnChanges {
-  @Input() name = "Lucky";
-
-
+  @Input() name = "Shad";
+  
   ngOnChanges(changes: SimpleChanges): void {
-  console.log(changes, 'changes');
-    for(const inputChange in changes) {
+    console.log(changes, 'changes');
+    for (const inputChange in changes){
       console.log(changes[inputChange].firstChange, inputChange);
-    }
-}
-
-
+    } 
+  }
+ 
 }
