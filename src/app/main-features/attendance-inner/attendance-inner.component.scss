@@ -1,0 +1,32 @@
+.row1 {
+    width: 100%;
+    display: flex;
+  }
+
+  .img-div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+  }
+
+  .att {
+    padding-right: 30%;
+  }
+  .att > li {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 60px 5px 30px;
+  }
+  .attt > li {
+    /* width: 100%; */
+    display: flex;
+    gap: 50px;
+  }
+
+  .attt li p {
+    width: 100px;
+  }
+  .bg-li {
+    background-color: rgba(132, 193, 209, 0.63);
+  }
