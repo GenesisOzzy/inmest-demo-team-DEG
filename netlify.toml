@@ -1,0 +1,3 @@
+[build]
+  publish = "dist/inMest-DEG"
+  command = "ng build --prod"
